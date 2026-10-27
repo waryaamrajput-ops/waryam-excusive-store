@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Exclusive Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-white text-slate-900">
+
+  <!-- Navbar -->
+  <header class="border-b border-slate-100">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
+      <a href="index.html" class="text-2xl font-bold tracking-tight">
+        Exclusive<span class="text-[#DB4444]">.</span>
+      </a>
+
+      <a href="index.html"
+         class="text-sm font-medium text-slate-600 transition hover:text-[#DB4444]">
+        ← Back to Home
+      </a>
+    </nav>
+  </header>
+
+  <!-- Login Section -->
+  <main class="flex min-h-[80vh] items-center justify-center px-4 py-12">
+    <section class="w-full max-w-md rounded-2xl bg-white p-8 shadow-xl shadow-slate-200/60">
+
+      <div class="mb-8 text-center">
+        <div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-red-50">
+          <svg xmlns="http://www.w3.org/2000/svg"
+               width="28" height="28" viewBox="0 0 24 24"
+               fill="none" stroke="#DB4444" stroke-width="1.8"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </div>
+
+        <h1 class="text-3xl font-bold tracking-tight">Login</h1>
+
+        <p class="mt-3 text-sm text-slate-500">
+          Welcome back to Exclusive.
+        </p>
+
+        <p class="mt-2 text-sm text-slate-500">
+          Enter your details below.
+        </p>
+      </div>
+
+      <form id="loginForm" class="space-y-5">
+
+        <!-- Email -->
+        <div>
+          <label for="email" class="mb-2 block text-sm font-semibold">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+            class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition placeholder:text-slate-400 focus:border-[#DB4444] focus:ring-2 focus:ring-red-100"
+          >
+        </div>
+
+        <!-- Password -->
+        <div>
+          <div class="mb-2 flex items-center justify-between">
+            <label for="password" class="text-sm font-semibold">
+              Password
+            </label>
+
+            <a href="#"
+               id="forgotPassword"
+               class="text-xs font-medium text-[#DB4444] hover:underline">
+              Forgot Password?
+            </a>
+          </div>
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            autocomplete="current-password"
+            required
+            class="w-full rounded-xl border border-slate-200 px-4 py-3 outline-none transition placeholder:text-slate-400 focus:border-[#DB4444] focus:ring-2 focus:ring-red-100"
+          >
+        </div>
+
+        <!-- Remember Me -->
+        <div class="flex items-center gap-2">
+          <input
+            type="checkbox"
+            id="rememberMe"
+            class="h-4 w-4 accent-[#DB4444]"
+          >
+          <label for="rememberMe" class="text-sm text-slate-600">
+            Remember me
+          </label>
+        </div>
+
+        <!-- Login Button -->
+        <button
+          type="submit"
+          class="w-full rounded-xl bg-[#DB4444] px-5 py-3.5 font-semibold text-white shadow-lg shadow-red-500/20 transition hover:bg-red-700 active:scale-[0.99]"
+        >
+          Login
+        </button>
+
+        <p id="loginMessage"
+           role="status"
+           aria-live="polite"
+           class="text-center text-sm">
+        </p>
+
+      </form>
+
+      <!-- Sign Up -->
+      <div class="mt-7 border-t border-slate-100 pt-6 text-center">
+        <p class="text-sm text-slate-500">
+          Don't have an account?
+          <a href="signup.html"
+             class="ml-1 font-semibold text-[#DB4444] hover:underline">
+            Sign Up
+          </a>
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-100 px-4 py-6 text-center text-sm text-slate-500">
+    © <span id="year"></span> Exclusive Store. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const loginForm = document.getElementById("loginForm");
+    const loginMessage = document.getElementById("loginMessage");
+
+    loginForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      if (!email || !password) {
+        loginMessage.textContent = "Please fill in all required fields.";
+        loginMessage.className = "text-center text-sm text-red-600";
+        return;
+      }
+
+      loginMessage.textContent =
+        "Login form validated successfully (demo only).";
+      loginMessage.className = "text-center text-sm text-green-600";
+
+      // This demo does not authenticate a real account.
+    });
+
+    document.getElementById("forgotPassword").addEventListener("click", function (event) {
+      event.preventDefault();
+
+      loginMessage.textContent =
+        "Password recovery is not configured yet.";
+      loginMessage.className = "text-center text-sm text-red-600";
+    });
+  </script>
+
+</body>
+</html>

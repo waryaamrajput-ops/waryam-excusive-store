@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact | Exclusive Store</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Same Font as index.html -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"]
+          },
+          colors: {
+            danger: "#DB4444"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="font-poppins bg-white text-black">
+
+  <!-- TOP BAR: Same as index.html -->
+  <div class="bg-black text-white text-xs md:text-sm">
+    <div class="mx-auto flex max-w-7xl items-center justify-center px-4 py-3 md:justify-between">
+      <div class="hidden md:block"></div>
+
+      <p class="text-center">
+        Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        <a href="index.html#products" class="ml-2 font-semibold underline">
+          ShopNow
+        </a>
+      </p>
+
+      <div class="hidden items-center gap-2 md:flex">
+        English
+        <i class="fa-solid fa-chevron-down text-[10px]"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b bg-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-5">
+
+      <a href="index.html" class="text-2xl font-bold">
+        Exclusive
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden items-center gap-8 text-sm lg:flex">
+        <a href="index.html" class="transition hover:text-danger">Home</a>
+        <a href="index.html#products" class="transition hover:text-danger">Products</a>
+        <a href="about.html" class="transition hover:text-danger">About</a>
+        <a href="contact.html" class="border-b border-black pb-1">Contact</a>
+        <a href="login.html" class="transition hover:text-danger">Login</a>
+        <a href="signup.html" class="transition hover:text-danger">Sign Up</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="cart.html" aria-label="Shopping cart" class="relative text-xl">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <button id="menuBtn" type="button"
+          class="text-2xl lg:hidden" aria-label="Toggle navigation"
+          aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <nav id="mobileMenu" class="hidden border-t bg-white px-5 py-5 lg:hidden">
+      <div class="flex flex-col gap-4 text-sm">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="font-semibold text-danger">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="cart.html">Shopping Cart</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PAGE HEADING -->
+    <section class="border-b border-gray-100">
+      <div class="mx-auto max-w-7xl px-4 py-12 md:py-16">
+
+        <p class="mb-4 text-sm text-gray-500">
+          <a href="index.html" class="hover:text-danger">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-black">Contact</span>
+        </p>
+
+        <h1 class="text-3xl font-semibold md:text-4xl">
+          Contact Us
+        </h1>
+
+        <p class="mt-4 max-w-2xl text-sm leading-7 text-gray-500 md:text-base">
+          Have a question about a product or your order?
+          Send us a message and we'll be happy to help.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="mx-auto max-w-7xl px-4 py-14 md:py-20">
+
+      <div class="grid gap-8 lg:grid-cols-5">
+
+        <!-- Contact Information -->
+        <div class="h-fit border-b border-gray-200 pb-8 lg:col-span-2 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-10">
+
+          <div class="space-y-8">
+
+            <!-- Call -->
+            <div>
+              <div class="mb-5 flex items-center gap-4">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-danger text-white">
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+                <h2 class="text-lg font-medium">Call To Us</h2>
+              </div>
+
+              <p class="text-sm leading-7 text-gray-600">
+                We're available to help with your questions.
+              </p>
+
+              <p class="mt-3 text-sm text-gray-600">
+                Phone: +92 300 0000000
+              </p>
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- Email -->
+            <div>
+              <div class="mb-5 flex items-center gap-4">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-danger text-white">
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+                <h2 class="text-lg font-medium">Write To Us</h2>
+              </div>
+
+              <p class="text-sm leading-7 text-gray-600">
+                Send us your questions, feedback or order enquiries.
+              </p>
+
+              <p class="mt-3 break-words text-sm text-gray-600">
+                Email: support@exclusive.com
+              </p>
+            </div>
+
+            <hr class="border-gray-200">
+
+            <!-- Address -->
+            <div>
+              <div class="mb-5 flex items-center gap-4">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-danger text-white">
+                  <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <h2 class="text-lg font-medium">Our Location</h2>
+              </div>
+
+              <p class="text-sm leading-7 text-gray-600">
+                Karachi, Pakistan
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="rounded border border-gray-100 bg-gray-50 p-5 sm:p-8 lg:col-span-3">
+
+          <h2 class="text-2xl font-medium">
+            Send Us a Message
+          </h2>
+
+          <p class="mt-2 text-sm leading-6 text-gray-500">
+            Fill out the form below. Fields marked with * are required.
+          </p>
+
+          <form id="contactForm" class="mt-8 space-y-6">
+
+            <div class="grid gap-5 sm:grid-cols-2">
+
+              <div>
+                <label for="contactName" class="mb-2 block text-sm">
+                  Your Name *
+                </label>
+
+                <input
+                  id="contactName"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  minlength="2"
+                  required
+                  class="w-full rounded border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-danger"
+                >
+              </div>
+
+              <div>
+                <label for="contactEmail" class="mb-2 block text-sm">
+                  Your Email *
+                </label>
+
+                <input
+                  id="contactEmail"
+                  name="email"
+                  type="email"
+                  placeholder="Your email"
+                  autocomplete="email"
+                  required
+                  class="w-full rounded border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-danger"
+                >
+              </div>
+
+            </div>
+
+            <div>
+              <label for="contactPhone" class="mb-2 block text-sm">
+                Phone Number
+              </label>
+
+              <input
+                id="contactPhone"
+                name="phone"
+                type="tel"
+                placeholder="Your phone number"
+                autocomplete="tel"
+                class="w-full rounded border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-danger"
+              >
+            </div>
+
+            <div>
+              <label for="contactSubject" class="mb-2 block text-sm">
+                Subject *
+              </label>
+
+              <select
+                id="contactSubject"
+                name="subject"
+                required
+                class="w-full rounded border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-danger"
+              >
+                <option value="">Select a subject</option>
+                <option value="Product Question">Product Question</option>
+                <option value="Order Enquiry">Order Enquiry</option>
+                <option value="Return or Refund">Return or Refund</option>
+                <option value="Website Feedback">Website Feedback</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="contactMessage" class="mb-2 block text-sm">
+                Your Message *
+              </label>
+
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="5"
+                minlength="10"
+                maxlength="2000"
+                placeholder="Write your message here..."
+                required
+                class="w-full resize-y rounded border border-gray-300 bg-white px-4 py-3 text-sm outline-none transition focus:border-danger"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="rounded bg-danger px-8 py-4 text-sm font-medium text-white transition hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
+            >
+              Send Message
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+
+            <p id="contactStatus"
+              role="status"
+              aria-live="polite"
+              class="hidden rounded border p-4 text-sm leading-6">
+            </p>
+
+            <p class="text-xs leading-5 text-gray-500">
+              This demo form does not send messages until a backend or form service is connected.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER: Matching index.html -->
+  <footer class="bg-black text-white">
+
+    <div class="mx-auto max-w-7xl px-4 py-14">
+
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+
+        <!-- Exclusive -->
+        <div>
+          <h2 class="mb-5 text-2xl font-bold">Exclusive</h2>
+
+          <h3 class="mb-4 font-medium">Subscribe</h3>
+
+          <p class="mb-4 text-sm text-gray-400">
+            Get 10% off your first order
+          </p>
+
+          <form id="subscribeForm" class="flex items-center border border-white px-3">
+            <input
+              type="email"
+              id="subscribeEmail"
+              placeholder="Enter your email"
+              required
+              aria-label="Email for newsletter"
+              class="w-full bg-transparent py-3 text-sm outline-none"
+            >
+
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <p id="subscribeStatus" class="mt-2 text-xs text-gray-400" role="status"></p>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Support</h3>
+
+          <div class="space-y-3 text-sm text-gray-300">
+            <p>Karachi, Pakistan</p>
+            <p>support@exclusive.com</p>
+            <p>+92 300 0000000</p>
+          </div>
+        </div>
+
+        <!-- Account -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Account</h3>
+
+          <div class="flex flex-col gap-3 text-sm text-gray-300">
+            <a href="login.html" class="transition hover:text-danger">My Account / Login</a>
+            <a href="signup.html" class="transition hover:text-danger">Register</a>
+            <a href="cart.html" class="transition hover:text-danger">Cart</a>
+            <a href="index.html#products" class="transition hover:text-danger">Shop</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Quick Link</h3>
+
+          <div class="flex flex-col gap-3 text-sm text-gray-300">
+            <a href="#" class="transition hover:text-danger">Privacy Policy</a>
+            <a href="#" class="transition hover:text-danger">Terms Of Use</a>
+            <a href="#" class="transition hover:text-danger">FAQ</a>
+            <a href="contact.html" class="transition hover:text-danger">Contact</a>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Follow Us</h3>
+
+          <div class="flex gap-5 text-xl">
+            <a href="#" aria-label="Facebook" class="transition hover:text-danger">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="transition hover:text-danger">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="transition hover:text-danger">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="transition hover:text-danger">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 py-5 text-center text-sm text-gray-500">
+      © <span id="currentYear"></span> Exclusive. All rights reserved.
+    </div>
+
+  </footer>
+
+  <!-- PAGE JAVASCRIPT -->
+  <script>
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    // Mobile navigation
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+
+      menuBtn.setAttribute("aria-expanded", String(!isHidden));
+      menuBtn.innerHTML = isHidden
+        ? '<i class="fa-solid fa-bars"></i>'
+        : '<i class="fa-solid fa-xmark"></i>';
+    });
+
+    // Contact form demo
+    const contactForm = document.getElementById("contactForm");
+    const contactStatus = document.getElementById("contactStatus");
+
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      if (!contactForm.reportValidity()) return;
+
+      contactStatus.textContent =
+        "Your form is valid! This demo does not send messages yet. Connect a backend or form service to receive enquiries.";
+
+      contactStatus.className =
+        "rounded border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-800";
+
+      contactForm.reset();
+    });
+
+    // Newsletter demo
+    document.getElementById("subscribeForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      document.getElementById("subscribeStatus").textContent =
+        "Newsletter subscription needs backend integration.";
+    });
+  </script>
+
+</body>
+</html>

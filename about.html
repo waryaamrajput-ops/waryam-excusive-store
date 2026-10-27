@@ -1,0 +1,362 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Exclusive Store</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"]
+          },
+          colors: {
+            danger: "#DB4444"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+
+<body class="bg-white font-poppins text-black">
+
+  <!-- TOP BAR -->
+  <div class="bg-black px-4 py-3 text-center text-xs text-white sm:text-sm">
+    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+    <a href="index.html#products" class="ml-2 font-semibold underline">ShopNow</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 border-b border-gray-200 bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-5">
+
+      <a href="index.html" class="text-2xl font-bold">
+        Exclusive
+      </a>
+
+      <div class="hidden items-center gap-8 text-sm lg:flex">
+        <a href="index.html" class="transition hover:text-danger">Home</a>
+        <a href="index.html#products" class="transition hover:text-danger">Products</a>
+        <a href="about.html" class="border-b border-black pb-1">About</a>
+        <a href="contact.html" class="transition hover:text-danger">Contact</a>
+        <a href="login.html" class="transition hover:text-danger">Login</a>
+        <a href="signup.html" class="transition hover:text-danger">Sign Up</a>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <a href="cart.html" aria-label="Shopping Cart" class="text-xl hover:text-danger">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <button id="menuBtn" type="button" aria-label="Toggle navigation"
+          aria-expanded="false" class="text-2xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden border-t border-gray-100 bg-white px-5 py-5 lg:hidden">
+      <div class="flex flex-col gap-4 text-sm">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="about.html" class="font-semibold text-danger">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="cart.html">Shopping Cart</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BREADCRUMB -->
+    <div class="mx-auto max-w-7xl px-4 pt-10">
+      <p class="text-sm text-gray-500">
+        <a href="index.html" class="hover:text-danger">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-black">About</span>
+      </p>
+    </div>
+
+    <!-- ABOUT HERO -->
+    <section class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 md:grid-cols-2 md:gap-16 md:py-20">
+
+      <div>
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-danger">
+          Our Story
+        </p>
+
+        <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+          About <span class="text-danger">Exclusive</span>
+        </h1>
+
+        <p class="mt-7 text-sm leading-8 text-gray-600 sm:text-base">
+          Welcome to Exclusive, your destination for discovering products
+          that combine style, quality and value.
+        </p>
+
+        <p class="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
+          Our goal is to make online shopping simple and convenient.
+          We aim to provide a smooth shopping experience, helpful service
+          and a carefully presented collection of products.
+        </p>
+
+        <p class="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
+          Whether you're looking for everyday essentials or something
+          special, Exclusive is designed to help you shop with confidence.
+        </p>
+
+        <a href="index.html#products"
+          class="mt-8 inline-flex items-center gap-3 rounded bg-danger px-8 py-4 text-sm font-medium text-white transition hover:bg-red-600">
+          Explore Our Products
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- IMAGE AREA -->
+      <div class="flex min-h-[300px] items-center justify-center overflow-hidden rounded bg-gray-100 p-8 sm:min-h-[400px]">
+        <div class="text-center">
+          <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-sm">
+            <i class="fa-solid fa-bag-shopping text-5xl text-danger"></i>
+          </div>
+
+          <h2 class="mt-6 text-2xl font-bold">EXCLUSIVE</h2>
+          <p class="mt-2 text-sm text-gray-500">Style. Quality. Convenience.</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- STORE FEATURES -->
+    <section class="border-y border-gray-100 py-16 sm:py-20">
+      <div class="mx-auto max-w-7xl px-4">
+
+        <div class="mx-auto mb-12 max-w-2xl text-center">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-danger">
+            Why Choose Us
+          </p>
+
+          <h2 class="text-3xl font-semibold sm:text-4xl">
+            Shopping Made Simple
+          </h2>
+
+          <p class="mt-4 text-sm leading-7 text-gray-500">
+            We're focused on making every step of your shopping journey
+            convenient and straightforward.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- Feature 1 -->
+          <div class="rounded border border-gray-200 p-8 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
+                <i class="fa-solid fa-truck-fast text-xl"></i>
+              </div>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold">Convenient Delivery</h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-500">
+              Shop from home and arrange delivery using the options available
+              at checkout.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="rounded border border-gray-200 p-8 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
+                <i class="fa-solid fa-headset text-xl"></i>
+              </div>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold">Customer Support</h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-500">
+              Have a question? Visit our contact page to send an enquiry
+              about products or orders.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="rounded border border-gray-200 p-8 text-center transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-gray-200">
+              <div class="flex h-11 w-11 items-center justify-center rounded-full bg-black text-white">
+                <i class="fa-solid fa-bag-shopping text-xl"></i>
+              </div>
+            </div>
+
+            <h3 class="mt-6 text-lg font-semibold">Easy Shopping</h3>
+
+            <p class="mt-3 text-sm leading-7 text-gray-500">
+              Browse products, add your favourites to the cart and review
+              your order before checkout.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR COMMITMENT -->
+    <section class="mx-auto max-w-7xl px-4 py-16 sm:py-20">
+      <div class="rounded bg-black px-6 py-12 text-center text-white sm:px-12 sm:py-16">
+
+        <p class="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-red-400">
+          Our Commitment
+        </p>
+
+        <h2 class="text-3xl font-semibold sm:text-4xl">
+          Your Shopping Experience Matters
+        </h2>
+
+        <p class="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-300">
+          We're building Exclusive to make browsing, selecting and ordering
+          products easier. Thank you for being part of our journey.
+        </p>
+
+        <a href="contact.html"
+          class="mt-8 inline-flex items-center gap-3 rounded bg-danger px-8 py-4 text-sm font-medium text-white transition hover:bg-red-600">
+          Contact Us
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white">
+
+    <div class="mx-auto max-w-7xl px-4 py-14">
+      <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+
+        <!-- Exclusive -->
+        <div>
+          <h2 class="mb-5 text-2xl font-bold">Exclusive</h2>
+          <h3 class="mb-4 font-medium">Subscribe</h3>
+
+          <p class="mb-4 text-sm text-gray-400">
+            Get 10% off your first order
+          </p>
+
+          <form id="subscribeForm" class="flex items-center border border-white px-3">
+            <input id="subscribeEmail" type="email" required
+              placeholder="Enter your email" aria-label="Newsletter email"
+              class="w-full bg-transparent py-3 text-sm outline-none">
+
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </form>
+
+          <p id="subscribeStatus" role="status" class="mt-2 text-xs text-gray-400"></p>
+        </div>
+
+        <!-- Support -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Support</h3>
+          <div class="space-y-3 text-sm text-gray-300">
+            <p>Karachi, Pakistan</p>
+            <p>support@exclusive.com</p>
+            <p>+92 300 0000000</p>
+          </div>
+        </div>
+
+        <!-- Account -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Account</h3>
+          <div class="flex flex-col gap-3 text-sm text-gray-300">
+            <a href="login.html" class="hover:text-danger">My Account / Login</a>
+            <a href="signup.html" class="hover:text-danger">Register</a>
+            <a href="cart.html" class="hover:text-danger">Cart</a>
+            <a href="index.html#products" class="hover:text-danger">Shop</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Quick Link</h3>
+          <div class="flex flex-col gap-3 text-sm text-gray-300">
+            <a href="#" class="hover:text-danger">Privacy Policy</a>
+            <a href="#" class="hover:text-danger">Terms Of Use</a>
+            <a href="#" class="hover:text-danger">FAQ</a>
+            <a href="contact.html" class="hover:text-danger">Contact</a>
+          </div>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h3 class="mb-5 text-lg font-semibold">Follow Us</h3>
+          <div class="flex gap-5 text-xl">
+            <a href="#" aria-label="Facebook" class="hover:text-danger">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="hover:text-danger">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="hover:text-danger">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-danger">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 py-5 text-center text-sm text-gray-500">
+      © <span id="currentYear"></span> Exclusive. All rights reserved.
+    </div>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.toggle("hidden");
+
+      menuBtn.setAttribute("aria-expanded", String(!isHidden));
+      menuBtn.innerHTML = isHidden
+        ? '<i class="fa-solid fa-bars"></i>'
+        : '<i class="fa-solid fa-xmark"></i>';
+    });
+
+    document.getElementById("subscribeForm").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      document.getElementById("subscribeStatus").textContent =
+        "Newsletter subscription needs backend integration.";
+    });
+  </script>
+
+</body>
+</html>
